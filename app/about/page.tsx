@@ -165,6 +165,7 @@ export default function AboutPage() {
                     key={index}
                     className="flex items-center gap-4 p-4 rounded-lg border border-yellow-400 hover:border-yellow-400/50 transition-colors bg-zinc-900/50"
                     variants={fadeInUp}
+                    target={skill.url}
                   >
                     <Image
                       src={skill.icon || "/placeholder.svg"}
