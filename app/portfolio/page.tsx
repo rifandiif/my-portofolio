@@ -137,7 +137,7 @@ export default function PortfolioPage() {
 
                   <div className="grid gap-8">
                     {/* Project Card - Now full width with larger image */}
-                    <motion.div
+                 {/*  <motion.div
                       className="bg-zinc-800 rounded-lg overflow-hidden border border-zinc-700 hover:border-yellow-400/50 transition-all duration-300"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -196,7 +196,7 @@ export default function PortfolioPage() {
                           </span>
                         </div>
                       </div>
-                    </motion.div>
+                    </motion.div>*/}
 
                     {/* Coming Soon Project */}
                     <motion.div
