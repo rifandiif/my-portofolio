@@ -45,7 +45,7 @@ export default function AboutPage() {
   ]
 
   const tools: Skill[] = [
-    { name: "RFSTOREPBG", 
+    { name: "RFSTORE", 
      url: "https://discord.gg/8ejs9xzPZC",
      icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
     },
