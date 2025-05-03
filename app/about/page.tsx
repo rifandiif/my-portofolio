@@ -18,7 +18,7 @@ export default function AboutPage() {
 
   const techStack: Skill[] = [
     {
-      name: "whatsapp",
+      name: "whatsapps",
       url: "https://wa.me/6285174179397",
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-189793.png?f=webp&w=256",
     },
@@ -92,8 +92,8 @@ export default function AboutPage() {
                 transition={{ duration: 0.5 }}
               >
                 {/* Glowing ring effect */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300 blur-md opacity-50 animate-pulse" />
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300 blur-md opacity-50 animate-pulse pointer-events-none" />
+                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300 pointer-events-none" />
                 <div className="relative w-32 h-32">
                   <Image
                     src="https://virtual-dimension.xyz/apis/uploads/9xnibE4Ndw66aNy.jpg"
