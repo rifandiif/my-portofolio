@@ -18,25 +18,29 @@ export default function AboutPage() {
 
   const techStack: Skill[] = [
     {
-      name: "whatsapps",
+      name: "Whatsapp",
       url: "https://wa.me/6285174179397",
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-189793.png?f=webp&w=256",
     },
     {
-      name: "CSS",
-      icon: "https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722685.png?f=webp&w=512",
+      name: "Instagram",
+      url: "https://instagram.com/rfstorepbg",
+      icon: "https://cdn.iconscout.com/icon/free/png-512/free-instagram-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-1583142.png?f=webp&w=256",
     },
     {
-      name: "PHP",
-      icon: "https://cdn.iconscout.com/icon/free/png-512/free-php-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175127.png?f=webp&w=512",
+      name: "Saweria",
+      url: "https://saweria.com/rfstorepbg",
+      icon: "https://i.supa.codes/4pbfm1",
     },
     {
-      name: "JavaScript",
-      icon: "https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-225993.png?f=webp&w=512",
+      name: "Channel Whatsapp",
+      url: "https://whatsapp.com/channel/0029VadvGTIKwqSVyFHGC50N",
+      icon: "https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-189793.png?f=webp&w=256",
     },
     {
-      name: "Laravel",
-      icon: "https://cdn.iconscout.com/icon/premium/png-512-thumb/laravel-9305885-7694084.png?f=webp&w=512",
+      name: "Tiktok",
+      url: "https://tiktok.com/@rfstorepbg",
+      icon: "https://cdn.iconscout.com/icon/free/png-512/free-tiktok-logo-icon-download-in-svg-png-gif-file-formats--music-video-social-media-pack-logos-icons-1581904.png?f=webp&w=256",
     },
     {
       name: "Vue.js",
