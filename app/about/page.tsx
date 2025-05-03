@@ -42,17 +42,6 @@ export default function AboutPage() {
       url: "https://tiktok.com/@rfstorepbg",
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-tiktok-logo-icon-download-in-svg-png-gif-file-formats--music-video-social-media-pack-logos-icons-1581904.png?f=webp&w=256",
     },
-    {
-      name: "Vue.js",
-      icon: "https://cdn.iconscout.com/icon/free/png-512/free-vuejs-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175070.png?f=webp&w=512",
-    },
-    {
-      name: "Node.js",
-      icon: "https://cdn.iconscout.com/icon/free/png-512/free-nodejs-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226034.png?f=webp&w=512",
-    },
-    { name: "Bootstrap", icon: "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" },
-    { name: "React.js", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
-    { name: "Tailwind", icon: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" },
   ]
 
   const tools: Skill[] = [
@@ -128,7 +117,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-2xl font-bold mb-6 inline-block relative">
-              Skills
+              LINK
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-yellow-400"></span>
             </h2>
 
@@ -140,7 +129,7 @@ export default function AboutPage() {
                   activeTab === "tech" ? "bg-yellow-400/20 text-yellow-400" : "text-gray-400 hover:text-white",
                 )}
               >
-                Tech Stack
+                RFSTOREPBG
               </button>
               <button
                 onClick={() => setActiveTab("tools")}
@@ -149,7 +138,7 @@ export default function AboutPage() {
                   activeTab === "tools" ? "bg-yellow-400/20 text-yellow-400" : "text-gray-400 hover:text-white",
                 )}
               >
-                Tools
+                PARTNER
               </button>
             </div>
 
