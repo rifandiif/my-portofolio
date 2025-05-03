@@ -57,7 +57,7 @@ export function Navbar() {
                     </div>
                   </div>
                   <Link
-                    href="https://github.com/RaolM"
+                    href="https://instagram.com/rfstorepbg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors duration-200"
