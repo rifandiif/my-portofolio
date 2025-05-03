@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
 type Skill = {
   name: string
   icon: string
-  url: string
+  url?: string
 }
 
 export default function AboutPage() {
@@ -159,37 +159,31 @@ export default function AboutPage() {
                 },
               }}
             >
-              {(activeTab === "tech" ? techStack : tools).map((skill, index) => (
-              const content = (
-                <motion.div
-                  key={index}
-                  className="flex items-center gap-4 p-4 rounded-lg border border-yellow-400 hover:border-yellow-400/50 transition-colors bg-zinc-900/50"
-                  variants={fadeInUp}
-                >
-                  <Image
-                    src={skill.icon || "/placeholder.svg"}
-                    alt={skill.name}
-                    width={40}
-                    height={40}
-                    className="object-contain"
-                  />
-                  <span>{skill.name}</span>
-                </motion.div>
-              )
-              return skill.url ? (
-    <a
-      key={index}
-      href={skill.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="no-underline"
-    >
-      {content}
-    </a>
-  ) : (
-    <div key={index}>{content}</div>
-  )
-})}
+              {(activeTab === "tech" ? techStack : tools).map((skill, index) => {
+                const content = (
+                  <motion.div
+                    key={index}
+                    className="flex items-center gap-4 p-4 rounded-lg border border-yellow-400 hover:border-yellow-400/50 transition-colors bg-zinc-900/50"
+                    variants={fadeInUp}
+                  >
+                    <Image
+                      src={skill.icon || "/placeholder.svg"}
+                      alt={skill.name}
+                      width={40}
+                      height={40}
+                      className="object-contain"
+                    />
+                    <span>{skill.name}</span>
+                  </motion.div>
+                )
+                return skill.url ? (
+                  <a key={index} href={skill.url} target="_blank" rel="noopener noreferrer">
+                    {content}
+                  </a>
+                ) : (
+                  <div key={index}>{content}</div>
+                )
+              })}
             </motion.div>
           </motion.div>
 
