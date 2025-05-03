@@ -96,8 +96,8 @@ export default function AboutPage() {
                   <Image
                     src="https://virtual-dimension.xyz/apis/uploads/9xnibE4Ndw66aNy.jpg"
                     alt="My Profile"
-                    width={128}
-                    height={128}
+                    width={200}
+                    height={200}
                     className="rounded-full border-4 border-black object-cover"
                   />
                 </div>
