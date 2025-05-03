@@ -17,8 +17,8 @@ export default function AboutPage() {
 
   const techStack: Skill[] = [
     {
-      name: "HTML",
-      icon: "https://cdn.iconscout.com/icon/free/png-512/free-html-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284975.png?f=webp&w=512",
+      name: "whatsapp",
+      icon: "https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-189793.png?f=webp&w=256",
     },
     {
       name: "CSS",
