@@ -3,6 +3,8 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Github } from "lucide-react"
+import { Instagram } from "lucide-react";
+
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -57,13 +59,13 @@ export function Navbar() {
                     </div>
                   </div>
                   <Link
-                    href="https://instagram.com/rfstorepbg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    <Github className="w-5 h-5" />
-                  </Link>
+  href="https://instagram.com/rfstorepbg"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-400 hover:text-white transition-colors duration-200"
+>
+  <Instagram className="w-5 h-5" />
+    </Link>
                 </div>
               </div>
             </div>
