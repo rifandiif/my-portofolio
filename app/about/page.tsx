@@ -195,8 +195,8 @@ export default function AboutPage() {
               >
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Email</h3>
-                  <a href="mailto:latesturltech@gmail.com" className="text-yellow-400 hover:underline">
-                    latesturltech@gmail.com
+                  <a href="mailto:admin@rfstorepbg.my.id" className="text-yellow-400 hover:underline">
+                    admin@rfstorepbg.my.id
                   </a>
                 </div>
               </motion.div>
@@ -209,7 +209,7 @@ export default function AboutPage() {
               >
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Location</h3>
-                  <p className="text-gray-300">Banjarbaru, Indonesia</p>
+                  <p className="text-gray-300">Purbalingga, Jawa Tengah, Indonesia</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Available for</h3>
