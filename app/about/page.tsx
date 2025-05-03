@@ -110,11 +110,6 @@ export default function AboutPage() {
                 </div>
               </motion.div>
               <div className="flex-1">
-                <p className="text-gray-300 mb-4">
-                  Hi everyone! I'm a passionate web developer with expertise in both front-end and back-end development.
-                  With several years of experience in web development, I specialize in creating responsive and
-                  user-friendly applications.
-                </p>
                 <p className="text-gray-300">
                   I believe in writing clean, maintainable code and creating intuitive user experiences. My goal is to
                   build websites that not only function flawlessly but also provide an engaging user experience.
