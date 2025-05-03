@@ -33,7 +33,7 @@ export default function AboutPage() {
       icon: "https://i.supa.codes/4pbfm1",
     },
     {
-      name: "Channel Whatsapp",
+      name: "Saluran",
       url: "https://whatsapp.com/channel/0029VadvGTIKwqSVyFHGC50N",
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-189793.png?f=webp&w=256",
     },
