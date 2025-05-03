@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils"
 type Skill = {
   name: string
   icon: string
+  url: string
 }
 
 export default function AboutPage() {
@@ -17,7 +18,7 @@ export default function AboutPage() {
 
   const techStack: Skill[] = [
     {
-      name: "whatsapps",
+      name: "whatsapp",
       url: "https://wa.me/6285174179397",
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-189793.png?f=webp&w=256",
     },
