@@ -175,14 +175,20 @@ export default function AboutPage() {
                   />
                   <span>{skill.name}</span>
                 </motion.div>
-              );
+              )
               return skill.url ? (
-    <a key={index} href={skill.url} target="_blank" rel="noopener noreferrer">
+    <a
+      key={index}
+      href={skill.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="no-underline"
+    >
       {content}
     </a>
   ) : (
-    content
-  );
+    <div key={index}>{content}</div>
+  )
 })}
             </motion.div>
           </motion.div>
