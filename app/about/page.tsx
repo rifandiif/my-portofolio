@@ -160,6 +160,7 @@ export default function AboutPage() {
               }}
             >
               {(activeTab === "tech" ? techStack : tools).map((skill, index) => (
+              const content = (
                 <motion.div
                   key={index}
                   className="flex items-center gap-4 p-4 rounded-lg border border-yellow-400 hover:border-yellow-400/50 transition-colors bg-zinc-900/50"
@@ -174,7 +175,15 @@ export default function AboutPage() {
                   />
                   <span>{skill.name}</span>
                 </motion.div>
-              ))}
+              );
+              return skill.url ? (
+    <a key={index} href={skill.url} target="_blank" rel="noopener noreferrer">
+      {content}
+    </a>
+  ) : (
+    content
+  );
+})}
             </motion.div>
           </motion.div>
 
