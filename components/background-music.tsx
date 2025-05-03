@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react"
 import { Volume2, VolumeX } from "lucide-react"
 
 export default function BackgroundMusic() {
-  const [isMuted, setIsMuted] = useState(false) // Start muted by default
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isMuted, setIsMuted] = useState(true) // Start muted by default
+  const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
