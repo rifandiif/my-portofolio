@@ -20,7 +20,7 @@ export function Navbar() {
           <div className="hidden landscape:block landscape:w-full landscape:fixed landscape:top-0 landscape:left-0 landscape:right-0 landscape:z-50">
             <div className="container mx-auto px-4 py-4">
               <div className="flex justify-between items-center backdrop-blur-md bg-black/70 rounded-full px-6 py-3 shadow-lg">
-                <span className="text-yellow-400 text-xl font-semibold whitespace-nowrap">Raol Mukarrozi</span>
+                <span className="text-yellow-400 text-xl font-semibold whitespace-nowrap">RFSTOREPBG</span>
 
                 <div className="hidden md:flex items-center justify-center gap-8">
                   {navItems.map((item) => (
