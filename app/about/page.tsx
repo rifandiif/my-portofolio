@@ -231,9 +231,9 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Available for</h3>
                   <ul className="list-disc list-inside text-gray-300">
-                    <li>Full Stack Developer</li>
-                    <li>Tech Educator</li>
-                    <li>Open Source Contributor</li>
+                    <li>Open Reseller Topup</li>
+                    <li>Topup All Game</li>
+                    <li>Sell Account MLBB</li>
                   </ul>
                 </div>
               </motion.div>
