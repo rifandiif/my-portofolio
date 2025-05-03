@@ -45,10 +45,22 @@ export default function AboutPage() {
   ]
 
   const tools: Skill[] = [
-    { name: "Git", icon: "https://cdn.worldvectorlogo.com/logos/git-icon.svg" },
-    { name: "GitHub", icon: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" },
-    { name: "NPM", icon: "https://cdn.worldvectorlogo.com/logos/npm.svg" },
-    { name: "MySQL", icon: "https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg" },
+    { name: "RFSTOREPBG", 
+     url: "https://discord.gg/8ejs9xzPZC",
+     icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
+    },
+    { name: "SAVE X", 
+     url: "https://discord.gg/6ZEq4EfngJ",
+     icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
+    },
+    { name: "Vanchez", 
+     url: "https://tiktok.com/@rfstorepbg",
+     icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
+    },
+    { name: "KODAI", 
+     url: "https://discord.gg/3XNSSdCkUd",
+     icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
+    },
   ]
 
   const fadeInUp = {
