@@ -40,7 +40,7 @@ export default function BackgroundMusic() {
       // Attempt autoplay
       const attemptAutoplay = async () => {
         try {
-          audio.muted = true // Ensure audio is muted before playing
+          audio.muted = false // Ensure audio is muted before playing
           await audio.play()
           setIsPlaying(true)
           setIsMuted(true)
