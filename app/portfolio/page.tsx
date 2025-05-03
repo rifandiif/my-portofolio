@@ -236,8 +236,8 @@ export default function PortfolioPage() {
                     {/* Album Art with Play Button Overlay */}
                     <div className="relative w-full aspect-square mb-4 cursor-pointer group" onClick={togglePlayPause}>
                       <Image
-                        src="https://i.scdn.co/image/ab67616d00001e0209df81649cd175b209c2c711"
-                        alt="EXCITE Album Cover"
+                        src="https://i.ytimg.com/vi/sVTBz2FFbp8/hq720.jpg"
+                        alt="Album Cover"
                         fill
                         className="rounded-md object-cover shadow-lg"
                       />
@@ -254,12 +254,12 @@ export default function PortfolioPage() {
 
                     {/* Song Info */}
                     <div className="text-center mb-3">
-                      <h2 className="text-xl font-bold">EXCITE</h2>
-                      <p className="text-gray-400 text-sm">Daichi Miura</p>
+                      <h2 className="text-xl font-bold">Masa Lalu</h2>
+                      <p className="text-gray-400 text-sm">Chaeroel</p>
                     </div>
 
                     {/* Audio Element (Hidden) */}
-                    <audio ref={audioRef} src="https://files.catbox.moe/boes1b.mp3" preload="auto" />
+                    <audio ref={audioRef} src="https://i.supa.codes/MT-CiK" preload="auto" />
 
                     {/* Minimal Time Display */}
                     <div className="text-xs text-gray-400 mb-3">
