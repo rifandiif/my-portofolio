@@ -54,7 +54,7 @@ export default function AboutPage() {
      icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
     },
     { name: "Vanchez", 
-     url: "https://tiktok.com/@rfstorepbg",
+     url: "https://discord.gg/CHz358vZ",
      icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
     },
     { name: "KODAI", 
