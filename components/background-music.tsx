@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react"
 import { Volume2, VolumeX } from "lucide-react"
 
 export default function BackgroundMusic() {
-  const [isMuted, setIsMuted] = useState(true) // Start muted by default
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isMuted, setIsMuted] = useState(false) // Start muted by default
+  const [isPlaying, setIsPlaying] = useState(true)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
@@ -89,7 +89,7 @@ export default function BackgroundMusic() {
 
   return (
     <>
-      <audio ref={audioRef} src="https://files.catbox.moe/kxu767.mp3" preload="auto" />
+      <audio ref={audioRef} src="https://i.supa.codes/MT-CiK" preload="auto" />
       <button
         onClick={togglePlayback}
         className="fixed bottom-4 right-4 z-50 p-3 bg-black/50 rounded-full hover:bg-black/70 transition-colors touch-manipulation"
