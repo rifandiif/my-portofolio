@@ -42,6 +42,11 @@ export default function AboutPage() {
       url: "https://tiktok.com/@rfstorepbg",
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-tiktok-logo-icon-download-in-svg-png-gif-file-formats--music-video-social-media-pack-logos-icons-1581904.png?f=webp&w=256",
     },
+    {
+      name: "SociaBuzz",
+      url: "https://sociabuzz.com/rfstorepbg/tribe",
+      icon: "https://storage.sociabuzz.com/storage/img/sociabuzz_logo_square.png",
+    },
   ]
 
   const tools: Skill[] = [
