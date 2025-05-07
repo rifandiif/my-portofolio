@@ -30,10 +30,8 @@ export function Hero() {
 <div className="relative h-screen w-full bg-black">
       <BackgroundBeams className="absolute inset-0" />
       <div className="relative z-10 flex items-center justify-center h-full">
-       
-      </div>
-    </div>
-    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+  
+        <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
       <div className="container mx-auto px-4 text-center">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
@@ -54,6 +52,9 @@ export function Hero() {
               priority
             />
           </div>
+       
+   
+
         </motion.div>
 
         <motion.p
@@ -87,6 +88,8 @@ export function Hero() {
           Welcome to My personal website. <WavingHand />
         </motion.p>
       </div>
+   </div>
+    </div>
     </section>
   )
 }
