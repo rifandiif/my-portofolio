@@ -27,8 +27,13 @@ const WavingHand = () => {
 
 export function Hero() {
   return (
+<div className="relative h-screen w-full bg-black">
+      <BackgroundBeams className="absolute inset-0" />
+      <div className="relative z-10 flex items-center justify-center h-full">
+       
+      </div>
+    </div>
     <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
-<BackgroundBeams className="absolute inset-0" />
       <div className="container mx-auto px-4 text-center">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
