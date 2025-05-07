@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { AnimatedText } from "./animated-text"
+import { BackgroundBeams } from "@/components/ui/background-beams";
+
 
 const WavingHand = () => {
   return (
@@ -26,6 +28,7 @@ const WavingHand = () => {
 export function Hero() {
   return (
     <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+<BackgroundBeams className="absolute inset-0" />
       <div className="container mx-auto px-4 text-center">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
