@@ -28,6 +28,11 @@ export default function AboutPage() {
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-instagram-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-1583142.png?f=webp&w=256",
     },
     {
+      name: "Instagram",
+      url: "https://instagram.com/rfstorepbgdm",
+      icon: "https://cdn.iconscout.com/icon/free/png-512/free-instagram-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-1583142.png?f=webp&w=256",
+    },
+    {
       name: "Saweria",
       url: "https://saweria.com/rfstorepbg",
       icon: "https://i.supa.codes/4pbfm1",
