@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { AnimatedText } from "./animated-text"
-
+import { memo } from "react"
 
 
 const WavingHand = () => {
@@ -48,15 +48,12 @@ export const Hero = memo(function Hero() {
               priority
             />
           </div>
-       
-   
-
         </motion.div>
 
-        <motion.p
-          initial={{ y: -20, opacity: 0 }}
+         <motion.p
+          initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
           className="text-yellow-400 text-xl mb-2"
         >
           Hello World, I&apos;m
@@ -76,15 +73,13 @@ export const Hero = memo(function Hero() {
         </div>
 
         <motion.p
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-2xl"
         >
           Welcome to My personal website. <WavingHand />
         </motion.p>
-      </div>
-   </div>
     </div>
     </section>
   )
