@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { AnimatedText } from "./animated-text"
-import { BackgroundBeams } from "@/components/ui/background-beams";
+
 
 
 const WavingHand = () => {
