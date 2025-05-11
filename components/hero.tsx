@@ -25,22 +25,18 @@ const WavingHand = () => {
   )
 }
 
-export function Hero() {
+export const Hero = memo(function Hero() {
   return (
-<div className="relative h-screen w-full bg-black">
-     
-      <div className="relative z-10 flex items-center justify-center h-full">
-  
-        <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
       <div className="container mx-auto px-4 text-center">
         <motion.div
-          initial={{ scale: 0, opacity: 0 }}
+          initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           className="mb-8 relative inline-block"
         >
-          {/* Glowing ring effect */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300 blur-md opacity-50 animate-pulse" />
+          {/* Optimized glowing ring effect */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300 blur-md opacity-50" />
           <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300" />
           <div className="relative">
             <Image
