@@ -53,7 +53,7 @@ export default function AboutPage() {
       icon: "https://storage.sociabuzz.com/storage/img/sociabuzz_logo_square.png",
     },
     {
-      name: "Bot Whatsapp",
+      name: "Bot Topup",
       url: "https://wa.me/6285174379397",
       icon: "https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-189793.png?f=webp&w=256",
     },
