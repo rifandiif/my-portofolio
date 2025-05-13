@@ -69,7 +69,7 @@ export default function AboutPage() {
      icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
     },
     { name: "Vanchez", 
-     url: "https://discord.gg/CHz358vZ",
+     url: "https://discord.gg/eyzQCfje2D",
      icon: "https://cdn.iconscout.com/icon/free/png-512/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?f=webp&w=256", 
     },
     { name: "KODAI", 
