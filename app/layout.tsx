@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'RFSTOREPBG',
-  description: 'Tech Enthusiast skilled in HTML, CSS, JavaScript, Tailwind, Node.js, and Laravel',
+  description: 'RFSTOREPBG adalah toko top up game terpercaya yang melayani Mobile Legends, Free Fire, PUBG Mobile, dan lainnya. Proses cepat, harga murah, pembayaran mudah',
   icons: [
     {
       rel: 'icon',
