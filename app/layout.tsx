@@ -9,6 +9,21 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'RFSTOREPBG',
   description: 'RFSTOREPBG adalah toko top up game terpercaya yang melayani Mobile Legends, Free Fire, PUBG Mobile, dan lainnya. Proses cepat, harga murah, pembayaran mudah',
+  openGraph: {
+    title: 'RFSTOREPBG - Toko Top Up Game',
+    description: 'Top up MLBB, FF, PUBG Mobile.',
+    url: 'https://www.rfstorepbg.my.id',
+    siteName: 'RFSTOREPBG',
+    images: [
+      {
+        url: 'https://www.rfstorepbg.my.id/images/preview.jpg', // 🔥 Gambar thumbnail WA
+        width: 1200,
+        height: 630,
+        alt: 'RFSTOREPBG Thumbnail',
+      },
+    ],
+    type: 'website',
+  },
   icons: [
     {
       rel: 'icon',
