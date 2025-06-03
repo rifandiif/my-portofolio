@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     siteName: 'RFSTOREPBG',
     images: [
       {
-        url: 'https://virtual-dimension.xyz/apis/uploads/9xnibE4Ndw66aNy.jpg', // 🔥 Gambar thumbnail WA
-        width: 1200,
-        height: 630,
+        url: 'https://www.rfstorepbg.my.id/9xnibE4Ndw66aNy.jpg', // 🔥 Gambar thumbnail WA
+        width: 400,
+        height: 400,
         alt: 'RFSTOREPBG Thumbnail',
       },
     ],
