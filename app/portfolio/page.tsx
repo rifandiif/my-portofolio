@@ -176,6 +176,47 @@ export default function PortfolioPage() {
   </motion.div>
 </Link>
 
+<Link
+  href="https://rfstorepbg.biz.id"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+  <motion.div
+    className="bg-zinc-800 rounded-lg overflow-hidden border border-zinc-700 hover:border-yellow-400/50 transition-all duration-300 cursor-pointer"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+    whileHover={{ y: -5 }}
+  >
+    <div className="relative h-64 md:h-80 w-full">
+      <Image
+        src="https://i.supa.codes/PDRRn-"
+        alt="Portfolio Project"
+        fill
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+      <div className="absolute bottom-4 left-4 right-4">
+        <h4 className="text-2xl font-bold text-white">WEB PHOTOBOOTH SEADANYA</h4>
+      </div>
+    </div>
+
+    <div className="p-6">
+      <p className="text-gray-300 mb-4">
+       platform photobox berbasis web yang memungkinkan pengguna mengambil foto secara online menggunakan kamera mereka, menerapkan filter AI, dan mengunduh hasilnya. Versi Beta ini dikembangkan menggunakan HTML, CSS, dan JavaScript. Versi yang lebih baik akan muncul segera.
+      </p>
+
+      <div className="flex flex-wrap gap-2">
+        <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs">Javascript</span>
+        <span className="px-3 py-1 bg-blue-400/20 text-blue-300 rounded-full text-xs">Html</span>
+<span className="px-3 py-1 bg-blue-400/20 text-blue-200 rounded-full text-xs">Css</span>
+
+      </div>
+    </div>
+  </motion.div>
+</Link>
+
 
                     {/* Coming Soon Project */}
                     <motion.div
