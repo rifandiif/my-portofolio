@@ -4,62 +4,40 @@ import { useState, useEffect, useRef } from "react"
 import { Volume2, VolumeX } from "lucide-react"
 
 export default function BackgroundMusic() {
-  const [isMuted, setIsMuted] = useState(false) // Start muted by default
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isMuted, setIsMuted] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
     const audio = audioRef.current
-    if (audio) {
-      // Set initial volume
-      audio.volume = 0.5
+    if (!audio) return
 
-      const handleEnded = () => {
-        setIsPlaying(false)
-        setIsMuted(true)
-        if (audio) {
-          audio.muted = true
-          audio.pause()
-        }
-      }
+    audio.volume = 0.5
+    audio.muted = true // Start muted
+    audio.play().then(() => {
+      setIsPlaying(true)
+    }).catch((err) => {
+      console.warn("Autoplay failed:", err)
+    })
 
-      const handlePlay = () => {
-        setIsPlaying(true)
+    const handleEnded = () => {
+      setIsPlaying(false)
+      setIsMuted(true)
+    }
+
+    audio.addEventListener("ended", handleEnded)
+
+    // Try to unmute after short delay (works on some browsers)
+    const unmuteTimeout = setTimeout(() => {
+      if (audio) {
+        audio.muted = false
         setIsMuted(false)
       }
+    }, 2000) // Try unmute after 2 seconds
 
-      const handlePause = () => {
-        setIsPlaying(false)
-      }
-
-      // Add event listeners
-      audio.addEventListener("ended", handleEnded)
-      audio.addEventListener("play", handlePlay)
-      audio.addEventListener("pause", handlePause)
-
-      // Attempt autoplay
-      const attemptAutoplay = async () => {
-        try {
-          audio.muted = false // Ensure audio is muted before playing
-          await audio.play()
-          setIsPlaying(true)
-          setIsMuted(false)
-        } catch (error) {
-          console.log("Autoplay failed:", error)
-          setIsPlaying(true)
-          setIsMuted(false)
-          audio.muted = false
-        }
-      }
-
-      attemptAutoplay()
-
-      // Cleanup
-      return () => {
-        audio.removeEventListener("ended", handleEnded)
-        audio.removeEventListener("play", handlePlay)
-        audio.removeEventListener("pause", handlePause)
-      }
+    return () => {
+      audio.removeEventListener("ended", handleEnded)
+      clearTimeout(unmuteTimeout)
     }
   }, [])
 
@@ -67,7 +45,7 @@ export default function BackgroundMusic() {
     const audio = audioRef.current
     if (!audio) return
 
-    if (isMuted) {
+    if (isMuted || !isPlaying) {
       try {
         audio.muted = false
         await audio.play()
@@ -75,9 +53,9 @@ export default function BackgroundMusic() {
         setIsMuted(false)
       } catch (error) {
         console.log("Playback failed:", error)
+        audio.muted = true
         setIsPlaying(false)
         setIsMuted(true)
-        audio.muted = true
       }
     } else {
       audio.muted = true
@@ -107,4 +85,3 @@ export default function BackgroundMusic() {
     </>
   )
 }
-
