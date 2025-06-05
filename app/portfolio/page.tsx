@@ -137,7 +137,7 @@ export default function PortfolioPage() {
 
                   <div className="grid gap-8">
                     {/* Project Card - Now full width with larger image */}
-                 {/*  <motion.div
+                   <motion.div
                       className="bg-zinc-800 rounded-lg overflow-hidden border border-zinc-700 hover:border-yellow-400/50 transition-all duration-300"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ export default function PortfolioPage() {
                     >
                       <div className="relative h-64 md:h-80 w-full">
                         <Image
-                          src="https://raw.githubusercontent.com/latesturl/dbCDN/refs/heads/main/my-DB/my-portofolio.jpg"
+                          src="https://storage.googleapis.com/fastwork-static/481f510b-b22c-4a85-997e-5c78d34dd583.jpg"
                           alt="Portfolio Project"
                           fill
                           className="object-cover"
@@ -156,16 +156,16 @@ export default function PortfolioPage() {
                           <h4 className="text-2xl font-bold text-white">Personal Portfolio</h4>
                           <div className="flex gap-2">
                             <Link
-                              href="https://github.com/latesturl/my-portofolio"
+                              href="https://wa.me/6285174379397"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="p-2 bg-zinc-900/80 rounded-full hover:bg-yellow-400/20 transition-colors"
                             >
                               <Github className="w-5 h-5" />
-                              <span className="sr-only">GitHub Repository</span>
+                              <span className="sr-only"BOT TOPUP WHATSAPP</span>
                             </Link>
                             <Link
-                              href="https://github.com/latesturl/my-portofolio"
+                              href="https://wa.me/6285174379397"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="p-2 bg-zinc-900/80 rounded-full hover:bg-yellow-400/20 transition-colors"
@@ -179,24 +179,15 @@ export default function PortfolioPage() {
 
                       <div className="p-6">
                         <p className="text-gray-300 mb-4">
-                          A modern, responsive personal portfolio website built with Next.js and Tailwind CSS.
+                          A modern, whatsapp bot untuk topup otomatis dengan sistem deposit dan saldo dengan role tertentu.
                         </p>
 
                         <div className="flex flex-wrap gap-2">
-                          <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs">Next.js</span>
-                          <span className="px-3 py-1 bg-blue-400/20 text-blue-300 rounded-full text-xs">React</span>
-                          <span className="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-xs">
-                            Tailwind CSS
-                          </span>
-                          <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs">
-                            Framer Motion
-                          </span>
-                          <span className="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs">
-                            TypeScript
-                          </span>
-                        </div>
+                          <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs">Javascript</span>
+                          <span className="px-3 py-1 bg-blue-400/20 text-blue-300 rounded-full text-xs">BOT WHATSAPP</span>
+                         </div>
                       </div>
-                    </motion.div>*/}
+                    </motion.div>
 
                     {/* Coming Soon Project */}
                     <motion.div
