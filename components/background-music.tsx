@@ -13,39 +13,51 @@ export default function BackgroundMusic() {
     if (!audio) return
 
     audio.volume = 0.5
-    audio.muted = true // Start muted
-    audio.play().then(() => {
-      setIsPlaying(true)
-    }).catch((err) => {
-      console.warn("Autoplay failed:", err)
-    })
+    audio.muted = true
 
-    const handleEnded = () => {
-      setIsPlaying(false)
-      setIsMuted(true)
-    }
+    const tryAutoplay = async () => {
+      try {
+        await audio.play()
+        setIsPlaying(true)
 
-    audio.addEventListener("ended", handleEnded)
+        // Jika autoplay berhasil, coba unmute setelah delay
+        setTimeout(() => {
+          try {
+            audio.muted = false
+            setIsMuted(false)
+          } catch (e) {
+            console.warn("Unmute failed", e)
+          }
+        }, 2000)
+      } catch (err) {
+        console.warn("Autoplay failed, waiting for interaction...", err)
+        // Pasang listener agar bisa auto play saat user klik atau scroll
+        const handleUserGesture = async () => {
+          try {
+            audio.muted = false
+            await audio.play()
+            setIsPlaying(true)
+            setIsMuted(false)
+            document.removeEventListener("click", handleUserGesture)
+            document.removeEventListener("scroll", handleUserGesture)
+          } catch (e) {
+            console.warn("Still can't play after user gesture", e)
+          }
+        }
 
-    // Try to unmute after short delay (works on some browsers)
-    const unmuteTimeout = setTimeout(() => {
-      if (audio) {
-        audio.muted = false
-        setIsMuted(false)
+        document.addEventListener("click", handleUserGesture)
+        document.addEventListener("scroll", handleUserGesture)
       }
-    }, 2000) // Try unmute after 2 seconds
-
-    return () => {
-      audio.removeEventListener("ended", handleEnded)
-      clearTimeout(unmuteTimeout)
     }
+
+    tryAutoplay()
   }, [])
 
   const togglePlayback = async () => {
     const audio = audioRef.current
     if (!audio) return
 
-    if (isMuted || !isPlaying) {
+    if (audio.paused || isMuted) {
       try {
         audio.muted = false
         await audio.play()
@@ -53,9 +65,6 @@ export default function BackgroundMusic() {
         setIsMuted(false)
       } catch (error) {
         console.log("Playback failed:", error)
-        audio.muted = true
-        setIsPlaying(false)
-        setIsMuted(true)
       }
     } else {
       audio.muted = true
@@ -70,7 +79,7 @@ export default function BackgroundMusic() {
       <audio ref={audioRef} src="https://i.supa.codes/MT-CiK" preload="auto" />
       <button
         onClick={togglePlayback}
-        className="fixed bottom-4 right-4 z-50 p-3 bg-black/50 rounded-full hover:bg-black/70 transition-colors touch-manipulation"
+        className="fixed bottom-4 right-4 z-50 p-3 bg-black/50 rounded-full hover:bg-black/70 transition-colors"
         aria-label={isMuted ? "Unmute background music" : "Mute background music"}
         style={{
           WebkitTapHighlightColor: "transparent",
