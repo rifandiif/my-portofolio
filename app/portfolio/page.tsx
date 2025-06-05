@@ -238,7 +238,7 @@ export default function PortfolioPage() {
                         <p className="text-gray-400">Stay tuned for upcoming projects.</p>
                       </div>
                     </motion.div>
-                  <h3 className="text-xl font-semibold mb-2 text-white">Certificate content coming soon...</h3>
+                {/*  <h3 className="text-xl font-semibold mb-2 text-white">Certificate content coming soon...</h3 */}
                 </div>
                 </div>
               </div>
