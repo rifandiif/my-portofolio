@@ -221,6 +221,20 @@ export default function PortfolioPage() {
             {activeTab === "certificates" && (
               <div className="grid gap-6">
                 <div className="bg-zinc-900 rounded-xl p-6">
+                  <motion.div
+                      className="bg-zinc-800 rounded-lg overflow-hidden border border-zinc-700 flex items-center justify-center p-8 text-center"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3 }}
+                    >
+                      <div>
+                        <div className="w-16 h-16 bg-zinc-700/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Code2 className="w-8 h-8 text-yellow-400" />
+                        </div>
+                        <h4 className="text-xl font-semibold mb-2">More Projects Coming Soon</h4>
+                        <p className="text-gray-400">Stay tuned for upcoming projects.</p>
+                      </div>
+                    </motion.div>
                   <h3 className="text-xl font-semibold mb-2 text-white">Certificate content coming soon...</h3>
                 </div>
               </div>
