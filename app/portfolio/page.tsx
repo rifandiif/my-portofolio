@@ -84,9 +84,8 @@ export default function PortfolioPage() {
   }
 
   return (
-    
+    <div className="min-h-screen bg-black text-white">
       <Header />
-<div className="min-h-screen bg-black text-white">
       <main className="container mx-auto px-4 py-8 portrait:pb-20 landscape:pt-20">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -138,57 +137,58 @@ export default function PortfolioPage() {
 
                   <div className="grid gap-8">
                     {/* Project Card - Now full width with larger image */}
-                   <motion.div
-                      className="bg-zinc-800 rounded-lg overflow-hidden border border-zinc-700 hover:border-yellow-400/50 transition-all duration-300"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2 }}
-                      whileHover={{ y: -5 }}
-                    >
-                      <div className="relative h-64 md:h-80 w-full">
-                        <Image
-                          src="https://storage.googleapis.com/fastwork-static/481f510b-b22c-4a85-997e-5c78d34dd583.jpg"
-                          alt="Portfolio Project"
-                          fill
-                          className="object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                        <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center">
-                          <h4 className="text-2xl font-bold text-white">Personal Portfolio</h4>
-                          <div className="flex gap-2">
-                            <Link
-                              href="https://wa.me/6285174379397"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="p-2 bg-zinc-900/80 rounded-full hover:bg-yellow-400/20 transition-colors"
-                            >
-                              <Github className="w-5 h-5" />
-                              <span className="sr-only">BOT TOPUP WHATSAPP</span>
-                            </Link>
-                            <Link
-                              href="https://wa.me/6285174379397"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="p-2 bg-zinc-900/80 rounded-full hover:bg-yellow-400/20 transition-colors"
-                            >
-                              <ExternalLink className="w-5 h-5" />
-                              <span className="sr-only">Live Demo</span>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
+<motion.div
+  className="bg-zinc-800 rounded-lg overflow-hidden border border-zinc-700 hover:border-yellow-400/50 transition-all duration-300"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  whileHover={{ y: -5 }}
+>
+  <div className="relative h-64 md:h-80 w-full">
+    <Image
+      src="https://storage.googleapis.com/fastwork-static/481f510b-b22c-4a85-997e-5c78d34dd583.jpg"
+      alt="Portfolio Project"
+      fill
+      className="object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+    <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center">
+      <h4 className="text-2xl font-bold text-white">Personal Portfolio</h4>
+      <div className="flex gap-2">
+        <Link
+          href="https://wa.me/6285174379397"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 bg-zinc-900/80 rounded-full hover:bg-yellow-400/20 transition-colors"
+        >
+          <Github className="w-5 h-5" />
+          <span className="sr-only">BOT TOPUP WHATSAPP</span>
+        </Link>
+        <Link
+          href="https://wa.me/6285174379397"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 bg-zinc-900/80 rounded-full hover:bg-yellow-400/20 transition-colors"
+        >
+          <ExternalLink className="w-5 h-5" />
+          <span className="sr-only">Live Demo</span>
+        </Link>
+      </div>
+    </div>
+  </div>
 
-                      <div className="p-6">
-                        <p className="text-gray-300 mb-4">
-                          A modern, whatsapp bot untuk topup otomatis dengan sistem deposit dan saldo dengan role tertentu.
-                        </p>
+  <div className="p-6">
+    <p className="text-gray-300 mb-4">
+      A modern, WhatsApp bot untuk topup otomatis dengan sistem deposit dan saldo dengan role tertentu.
+    </p>
 
-                        <div className="flex flex-wrap gap-2">
-                          <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs">Javascript</span>
-                          <span className="px-3 py-1 bg-blue-400/20 text-blue-300 rounded-full text-xs">BOT WHATSAPP</span>
-                         </div>
-                      </div>
-                    </motion.div>
+    <div className="flex flex-wrap gap-2">
+      <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs">Javascript</span>
+      <span className="px-3 py-1 bg-blue-400/20 text-blue-300 rounded-full text-xs">BOT WHATSAPP</span>
+    </div>
+  </div>
+</motion.div>
+
 
                     {/* Coming Soon Project */}
                     <motion.div
