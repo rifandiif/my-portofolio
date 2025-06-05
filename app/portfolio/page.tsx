@@ -162,7 +162,7 @@ export default function PortfolioPage() {
                               className="p-2 bg-zinc-900/80 rounded-full hover:bg-yellow-400/20 transition-colors"
                             >
                               <Github className="w-5 h-5" />
-                              <span className="sr-only"BOT TOPUP WHATSAPP</span>
+                              <span className="sr-only">BOT TOPUP WHATSAPP</span>
                             </Link>
                             <Link
                               href="https://wa.me/6285174379397"
