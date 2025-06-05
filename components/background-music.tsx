@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react"
 import { Volume2, VolumeX } from "lucide-react"
 
 export default function BackgroundMusic() {
-  const [isMuted, setIsMuted] = useState(true) // Start muted by default
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isMuted, setIsMuted] = useState(false) // Start muted by default
+  const [isPlaying, setIsPlaying] = useState(true)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
@@ -40,15 +40,15 @@ export default function BackgroundMusic() {
       // Attempt autoplay
       const attemptAutoplay = async () => {
         try {
-          audio.muted = true // Ensure audio is muted before playing
+          audio.muted = false // Ensure audio is muted before playing
           await audio.play()
           setIsPlaying(true)
-          setIsMuted(true)
+          setIsMuted(false)
         } catch (error) {
           console.log("Autoplay failed:", error)
-          setIsPlaying(false)
-          setIsMuted(true)
-          audio.muted = true
+          setIsPlaying(true)
+          setIsMuted(false)
+          audio.muted = false
         }
       }
 
