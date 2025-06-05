@@ -84,8 +84,9 @@ export default function PortfolioPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    
       <Header />
+<div className="min-h-screen bg-black text-white">
       <main className="container mx-auto px-4 py-8 portrait:pb-20 landscape:pt-20">
         <div className="max-w-4xl mx-auto">
           <motion.div
