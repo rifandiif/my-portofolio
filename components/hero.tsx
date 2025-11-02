@@ -40,7 +40,7 @@ export const Hero = memo(function Hero() {
           <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-300" />
           <div className="relative">
             <Image
-              src="https://virtual-dimension.xyz/apis/uploads/9xnibE4Ndw66aNy.jpg"
+              src="https://www.rfstorepbg.my.id/9xnibE4Ndw66aNy.jpg"
               alt="My Profile"
               width={200}
               height={200}
